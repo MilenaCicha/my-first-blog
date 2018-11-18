@@ -24,6 +24,23 @@
 # for imie in dziewczyny:
 #     hi(imie)
 #     print('Kolejna dziewczyna')
+#
+# def random(name):
+#     print(name)
+#
+#
+# random('Ola')
+def get_object_or_404(Post, pk):
+    if Post:
+        return pk
+    else:
+        return 404
 
-for i in range(1, 6):
-    print(i)
+def wrong(abc, de=78, fgh=' Monika'):
+    print(abc, de, fgh)
+    print(abc)
+
+wrong('Kasia', fgh='Magda')
+
+# post = get_object_or_404(Post, pk=pk)
+
